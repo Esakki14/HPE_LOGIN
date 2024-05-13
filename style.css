@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    --header-bg: #000000;
+    --header-txt: #dfdfdf;
+    --icon-txt: #138b77;
+    --btn-color: #07d2a1;
+    --footer-bg: #f0f0f0;
+}
+.navContainer{
+    width: 100%;
+    height: 10vh;
+    background: var(--header-bg);
+    display: flex;
+    align-items: center;
+    color: var(--header-txt);
+    justify-content: center;
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+.navlinks{
+    display: flex;
+    color: var(--header-txt);
+    justify-content: space-around;
+    width: 40%;
+}
+.navlinks a{
+    color: var(--header-txt);
+}
+.logo-img{
+    width: 50px;
+    height: 20px;
+    border: 3px solid #138b77;
+}
+
+.checkbtn {
+    color: #ffffff;
+    font-size: 25px;
+    margin-right: 20px;
+    padding: 6px 6px ;
+    display: none;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+}
+#check {
+    display: none;
+}
+main{
+    width: 100%;
+}
+
+.signContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign{
+    margin: 10px 0;
+    width: 30%;
+}
+
+.signp{
+    margin: 5px 0;
+    color: var(--header-bg);
+}
+h2{
+    font-size: 2rem ;
+    margin: 5px 0;
+}
+.user-id{
+    font-size: 20px !important;
+    font-weight: 600;
+    margin: 5px 0;
+}
+input{
+    height: 40px;
+    width: 100%;
+    border: 3px solid var(--footer-bg);
+    margin: 5px 0;
+    padding: 0 10px;
+}
+input:focus{
+    border: 2px solid var(--btn-color);
+    outline: 0;
+}
+
+.btn{
+    width: 100px;
+    background-color: var(--btn-color);
+    font-weight: bold;
+    color: var(--header-bg);
+    padding: 5px 0;
+    border: none;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+.forget-password{
+    color: var(--header-bg);
+    margin-bottom: 10px ;
+}
+.forget-btn:hover{
+    color: var(--header-bg);
+}
+.forget-id{
+    display: flex;
+    margin-bottom: 10px ;
+}
+.forget-id i{
+    color: var(--icon-txt);
+}
+.for-id{
+    margin-right: 10px !important;
+}
+.sign{
+    color: var(--header-bg);
+    margin-top: 10px;
+}
+.sign:hover{
+    color: var(--header-bg);
+}
+
+
+
+footer{
+    background: var(--footer-bg);
+}
+.footerContect{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.footerContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 10px;
+}
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 10px 0;
+    color: var(--icon-txt);
+    font-size: 20px;
+}
+
+footer p{
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+footer li{
+    list-style-type: none;
+}
+footer ul{
+    margin-bottom: 20px ;
+}
+
+footer ul li{
+    font-size: 16px ;
+    margin-bottom: 8px !important;
+}
+.card{
+    border: none !important;
+    padding: 20px;
+    background-color: var(--footer-bg) !important;
+}
+
+.foodend{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px;
+}
+.copyRR{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; */
+}
+.location-logo{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.location-logo i{
+    margin-right: 10px;
+    color: #138b77;
+}
+.privacy{
+    /* padding: 10px; */
+}
+@media(max-width:992px){
+    .navBar{
+        width: 100%;
+    }
+    .navlinks{
+        background: #000000;
+        position: absolute;
+        top: 60px;
+        flex-direction: column;
+        height: 100px;
+        width: 100%;
+        display: none;
+        justify-content: center;
+    }
+    .navlinks li{
+        height: 5vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navlinks a{
+        color: var(--header-txt);
+    }
+    .checkbtn{
+        display: flex;
+    }
+    #check:checked~ .navlinks{
+        display: flex;
+    }
+    .navBar{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .sign{
+        margin: 10px 0;
+        width: 50%;
+    }
+    .foodend{
+      flex-direction: column;
+    }
+    h2{
+        font-size: 1.6rem ;
+    }  
+    .location-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }  
+
+}
